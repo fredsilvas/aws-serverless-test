@@ -1,0 +1,25 @@
+{
+  "name": "aws-serverless-test",
+  "version": "1.0.0",
+  "description": "AWS Serverless test",
+  "main": "handler.js",
+  "dependencies": {
+    "sharp": "^0.28.1"
+  },
+  "scripts": {
+    "predeploy": "rm -rf node_modules/sharp && npm install sharp",
+    "deploy": "serverless deploy -v",
+    "postdeploy": "rm -rf node_modules/sharp && npm install sharp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredsilvas/aws-serverless-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredsilvas/aws-serverless-test/issues"
+  },
+  "homepage": "https://github.com/fredsilvas/aws-serverless-test#readme"
+}
