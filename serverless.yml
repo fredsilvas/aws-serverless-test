@@ -41,3 +41,9 @@ functions:
           rules:
             - prefix: uploads/
             - suffix: .png
+      - s3:
+          bucket: fredsilvas-serverless
+          event: s3:ObjectCreated:*
+          rules:
+            - prefix: uploads/
+            - suffix: .dng            
